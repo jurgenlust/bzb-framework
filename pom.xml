@@ -5,7 +5,7 @@
     <groupId>be.bzb-it.framework</groupId>
     <artifactId>bzb-framework</artifactId>
     <packaging>pom</packaging>
-    <version>0.7.4-SNAPSHOT</version>
+    <version>0.7.4</version>
     <name>BZB Framework</name>
     <modules>
         <module>dependencies</module>
