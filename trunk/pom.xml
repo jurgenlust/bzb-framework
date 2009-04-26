@@ -122,6 +122,11 @@
             </plugins>
         </pluginManagement>
     </build>
+    <scm>
+        <connection>scm:svn:http://bzb-framework.googlecode.com/svn/trunk/</connection>
+        <developerConnection>scm:svn:https://bzb-framework.googlecode.com/svn/trunk/</developerConnection>
+        <url>http://code.google.com/p/bzb-framework/source/browse/</url>
+    </scm>
     <distributionManagement>
         <!-- use the following if you're not using a snapshot version. -->
     	<repository>
