@@ -282,6 +282,20 @@
             </plugin>
         </plugins>
     </reporting>
+    <distributionManagement>
+        <!-- use the following if you're not using a snapshot version. -->
+    	<repository>
+            <id>local-repo</id>
+       	    <name>local repository</name>
+            <url>file://${user.home}/.m2/repository</url>
+        </repository>
+        <!-- use the following if you ARE using a snapshot version. -->
+        <snapshotRepository>
+            <id>local-snapshot-repo</id>
+       	    <name>local snapshot repository</name>
+            <url>file://${user.home}/.m2/repository</url>
+        </snapshotRepository>
+    </distributionManagement>
     <repositories>
         <repository>
             <id>jboss</id>
