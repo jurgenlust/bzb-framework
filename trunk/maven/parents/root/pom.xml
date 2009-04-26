@@ -4,7 +4,7 @@
     <groupId>be.bzb-it.framework.maven.parents</groupId>
     <artifactId>root</artifactId>
     <packaging>pom</packaging>
-    <version>0.7.4</version>
+    <version>0.7.5-SNAPSHOT</version>
     <name>BZB Framework - Parent pom for all types of projects</name>
     <organization>
         <name>BZB IT</name>
