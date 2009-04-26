@@ -36,9 +36,9 @@ import java.util.Iterator;
  * Formatteer de Java source code van een project met behulp van Jalopy
  *
  * @author Jurgen Lust
- * @author $LastChangedBy: jlust $
+ * @author $LastChangedBy$
  *
- * @version $LastChangedRevision: 169 $
+ * @version $LastChangedRevision$
  *
  * @goal format
  * @phase process-sources

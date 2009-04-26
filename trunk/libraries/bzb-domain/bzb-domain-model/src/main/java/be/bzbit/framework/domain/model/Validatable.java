@@ -7,9 +7,9 @@ import org.hibernate.validator.AssertTrue;
  * Hibernate annotations. 
  *
  * @author Jurgen Lust
- * @author $LastChangedBy: jlust $
+ * @author $LastChangedBy$
  *
- * @version $LastChangedRevision: 202 $
+ * @version $LastChangedRevision$
  */
 public interface Validatable {
 	@AssertTrue Boolean isValid();

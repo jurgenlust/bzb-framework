@@ -19,9 +19,9 @@ import be.bzbit.framework.domain.model.Digestable;
  * entity. Inspired by http://www.hibernate.org/164.html
  * 
  * @author jlust
- * @author $LastChangedBy: jlust $
+ * @author $LastChangedBy$
  * 
- * @version $LastChangedRevision: 317 $
+ * @version $LastChangedRevision$
  */
 public class DigestGeneratingInterceptor<T> extends AbstractInterceptor<T> {
 	private static final Log log = LogFactory

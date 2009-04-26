@@ -10,9 +10,9 @@ import java.util.List;
  * Search Criteria with support for paging, using full text search
  * 
  * @author Jurgen Lust
- * @author $LastChangedBy: jlust $
+ * @author $LastChangedBy$
  * 
- * @version $LastChangedRevision: 223 $
+ * @version $LastChangedRevision$
  */
 public class FullTextSearchCriteria extends AbstractSearchCriteria implements Serializable {
 	private static final long serialVersionUID = -1705792818141695841L;

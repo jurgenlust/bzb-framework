@@ -4,9 +4,9 @@ package be.bzbit.framework.domain.search;
  * Search Criteria with support for paging
  * 
  * @author Jurgen Lust
- * @author $LastChangedBy: jlust $
+ * @author $LastChangedBy$
  * 
- * @version $LastChangedRevision: 225 $
+ * @version $LastChangedRevision$
  */
 public interface SearchCriteria {
 

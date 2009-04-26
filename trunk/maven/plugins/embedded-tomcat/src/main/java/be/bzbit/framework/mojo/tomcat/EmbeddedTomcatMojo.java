@@ -31,9 +31,9 @@ import java.net.URL;
  * directory as webapp Source Dir
  *
  * @author Jurgen Lust
- * @author $LastChangedBy: jlust $
+ * @author $LastChangedBy$
  *
- * @version $LastChangedRevision: 309 $
+ * @version $LastChangedRevision$
  *
  * @goal run
  * @requiresDependencyResolution runtime

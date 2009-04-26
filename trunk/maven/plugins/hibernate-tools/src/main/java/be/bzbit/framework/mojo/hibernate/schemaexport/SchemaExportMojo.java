@@ -22,9 +22,9 @@ import org.hibernate.tool.hbm2ddl.SchemaExport;
  * Exporteer een DDL file voor de gespecifieerde databanken
  * 
  * @author Jurgen Lust
- * @author $LastChangedBy: jlust $
+ * @author $LastChangedBy$
  * 
- * @version $LastChangedRevision: 253 $
+ * @version $LastChangedRevision$
  * 
  * @requiresDependencyResolution
  * @goal export

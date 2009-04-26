@@ -8,9 +8,9 @@ import org.apache.commons.lang.builder.ToStringBuilder;
  * Search Criteria with support for paging
  * 
  * @author Jurgen Lust
- * @author $LastChangedBy: jlust $
+ * @author $LastChangedBy$
  * 
- * @version $LastChangedRevision: 225 $
+ * @version $LastChangedRevision$
  */
 public class AbstractSearchCriteria implements SearchCriteria, Serializable {
 

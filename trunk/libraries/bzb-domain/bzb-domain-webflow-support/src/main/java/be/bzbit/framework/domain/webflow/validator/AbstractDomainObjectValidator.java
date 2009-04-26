@@ -13,9 +13,9 @@ import be.bzbit.framework.domain.model.DomainObject;
  * Validator
  * 
  * @author Jurgen Lust
- * @author $LastChangedBy: jlust $
+ * @author $LastChangedBy$
  *
- * @version $LastChangedRevision: 215 $
+ * @version $LastChangedRevision$
  */
 public abstract class AbstractDomainObjectValidator<T extends DomainObject> {
 	

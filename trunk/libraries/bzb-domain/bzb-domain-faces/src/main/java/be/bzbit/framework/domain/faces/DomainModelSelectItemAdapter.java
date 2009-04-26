@@ -15,9 +15,9 @@ import be.bzbit.framework.domain.model.DomainObject;
  * Convert a list of domain object in a list of JSF SelectItems
  *
  * @author Jurgen Lust
- * @author $LastChangedBy: jlust $
+ * @author $LastChangedBy$
  *
- * @version $LastChangedRevision: 179 $
+ * @version $LastChangedRevision$
  */
 public class DomainModelSelectItemAdapter
         implements Serializable {

@@ -9,9 +9,9 @@ import be.bzbit.framework.domain.repository.Interceptor;
  * and override the methods you need
  *
  * @author jlust
- * @author $LastChangedBy: jlust $
+ * @author $LastChangedBy$
  *
- * @version $LastChangedRevision: 258 $
+ * @version $LastChangedRevision$
  */
 public class AbstractInterceptor<T> implements Interceptor<T> {
 	

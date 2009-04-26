@@ -15,9 +15,9 @@ import be.bzbit.framework.domain.repository.DomainObjectRepository;
  * Generic Handler for domain objects, providing a converter among others.
  *
  * @author Jurgen Lust
- * @author $LastChangedBy: jlust $
+ * @author $LastChangedBy$
  *
- * @version $LastChangedRevision: 179 $
+ * @version $LastChangedRevision$
  *
  * @param <T> the type of domain object
  */

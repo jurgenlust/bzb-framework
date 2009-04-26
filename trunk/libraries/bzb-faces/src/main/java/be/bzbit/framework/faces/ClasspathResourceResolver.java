@@ -13,9 +13,9 @@ import java.net.URL;
  * Facelet templates
  *
  * @author Jurgen Lust
- * @author $LastChangedBy: jlust $
+ * @author $LastChangedBy$
  *
- * @version $LastChangedRevision: 172 $
+ * @version $LastChangedRevision$
  */
 public class ClasspathResourceResolver
         extends DefaultResourceResolver

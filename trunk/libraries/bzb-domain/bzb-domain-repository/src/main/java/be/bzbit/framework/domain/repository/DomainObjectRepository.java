@@ -11,9 +11,9 @@ import be.bzbit.framework.domain.model.DomainObject;
  * A Generic Repository for DomainObjects
  *
  * @author Jurgen Lust
- * @author $LastChangedBy: jlust $
+ * @author $LastChangedBy$
  *
- * @version $LastChangedRevision: 152 $
+ * @version $LastChangedRevision$
  *
  * @param <T> the entity type
  */

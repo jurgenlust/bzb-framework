@@ -9,9 +9,9 @@ import java.util.List;
  * results were found
  *  
  * @author jlust
- * @author $LastChangedBy: jlust $
+ * @author $LastChangedBy$
  *
- * @version $LastChangedRevision: 230 $
+ * @version $LastChangedRevision$
  *
  * @param <T> the type of persistent object
  */

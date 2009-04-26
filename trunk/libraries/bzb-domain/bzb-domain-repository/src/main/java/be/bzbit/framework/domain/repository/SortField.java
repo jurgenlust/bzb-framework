@@ -14,9 +14,9 @@ import be.bzbit.framework.domain.repository.Sort.Direction;
  * Only for use in the Sort class
  *
  * @author Jurgen Lust
- * @author $LastChangedBy: jlust $
+ * @author $LastChangedBy$
  *
- * @version $LastChangedRevision: 223 $
+ * @version $LastChangedRevision$
  */
 public class SortField {
     //~ Instance fields --------------------------------------------------------

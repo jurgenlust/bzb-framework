@@ -10,9 +10,9 @@ import be.bzbit.framework.domain.repository.Sort;
  * Search Criteria with support for paging
  * 
  * @author Jurgen Lust
- * @author $LastChangedBy: jlust $
+ * @author $LastChangedBy$
  * 
- * @version $LastChangedRevision: 225 $
+ * @version $LastChangedRevision$
  */
 public class AbstractSearchCriteria implements SearchCriteria, Serializable {
 

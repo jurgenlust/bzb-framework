@@ -28,6 +28,9 @@ import javax.faces.model.SelectItem;
 import javax.faces.model.SelectItemGroup;
 
 /**
+ * This is a slightly altered version of the Easy SelectItems found here:
+ * http://cagataycivici.wordpress.com/2006/07/20/easy_select_items_for_jsf/
+ * 
  * This SelectItems tag does not require a collection of select items, you
  * can use a collection of objects, which will then be automatically
  * wrapped in SelectItems
