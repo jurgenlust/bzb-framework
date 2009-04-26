@@ -1,0 +1,20 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+ <parent>
+  <groupId>be.bzb-it.framework</groupId>
+  <artifactId>bzb-dependencies</artifactId>
+  <version>0.7.4</version>
+ </parent>
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>be.bzb-it.framework.dependencies</groupId>
+  <artifactId>jdbc-postgresql</artifactId>
+  <packaging>pom</packaging>
+  <name>BZB Framework - Dependencies - JDBC driver for PostgreSQL</name>
+ <dependencies>
+  <dependency>
+   <groupId>postgresql</groupId>
+   <artifactId>postgresql</artifactId>
+   <version>8.1-407.jdbc3</version>
+  </dependency>
+ </dependencies>
+</project>
