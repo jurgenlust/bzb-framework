@@ -1,0 +1,37 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+ <parent>
+  <groupId>be.bzb-it.framework</groupId>
+  <artifactId>bzb-dependencies</artifactId>
+  <version>0.7.4-SNAPSHOT</version>
+ </parent>
+ <modelVersion>4.0.0</modelVersion>
+ <groupId>be.bzb-it.framework.dependencies</groupId>
+ <artifactId>commons-logging</artifactId>
+ <packaging>pom</packaging>
+ <name>BZB Framework - Dependencies - commons logging</name>
+ <dependencies>
+  <dependency>
+   <groupId>commons-logging</groupId>
+   <artifactId>commons-logging</artifactId>
+   <version>1.1.1</version>
+   <exclusions>
+     <exclusion>
+	<groupId>avalon-framework</groupId>
+        <artifactId>avalon-framework</artifactId>
+     </exclusion>
+     <exclusion>
+	<groupId>log4j</groupId>
+        <artifactId>log4j</artifactId>
+     </exclusion>
+     <exclusion>
+	<groupId>logkit</groupId>
+        <artifactId>logkit</artifactId>
+     </exclusion>
+     <exclusion>
+	<groupId>javax.servlet</groupId>
+        <artifactId>servlet-api</artifactId>
+     </exclusion>
+   </exclusions>
+  </dependency>
+ </dependencies>
+</project>
