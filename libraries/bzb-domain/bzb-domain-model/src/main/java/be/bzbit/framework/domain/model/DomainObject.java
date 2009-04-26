@@ -21,9 +21,9 @@ import org.hibernate.search.annotations.DocumentId;
  * which may be useful for binding frameworks.
  *
  * @author Jurgen Lust
- * @author $LastChangedBy: Jurgen $
+ * @author $LastChangedBy$
  *
- * @version $LastChangedRevision: 376 $
+ * @version $LastChangedRevision$
  */
 @MappedSuperclass
 public abstract class DomainObject

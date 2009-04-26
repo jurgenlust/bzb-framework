@@ -20,9 +20,9 @@ import be.bzbit.framework.domain.search.SortField.Direction;
  * Use this class to specify sorting when performing queries
  *
  * @author Jurgen Lust
- * @author $LastChangedBy: jlust $
+ * @author $LastChangedBy$
  *
- * @version $LastChangedRevision: 223 $
+ * @version $LastChangedRevision$
  */
 public class Sort
         implements Serializable {

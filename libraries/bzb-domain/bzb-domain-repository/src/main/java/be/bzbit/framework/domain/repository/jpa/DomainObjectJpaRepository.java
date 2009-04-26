@@ -8,9 +8,9 @@ import be.bzbit.framework.domain.repository.DomainObjectRepository;
  * JPA implementation of the DomainObjectRepository
  *
  * @author Jurgen Lust
- * @author $LastChangedBy: jlust $
+ * @author $LastChangedBy$
  *
- * @version $LastChangedRevision: 202 $
+ * @version $LastChangedRevision$
  *
  * @param <T> The persistent type
  */

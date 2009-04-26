@@ -6,9 +6,9 @@ import java.util.Collection;
  * Interceptor for Generic Repository operations
  *
  * @author Jurgen Lust
- * @author $LastChangedBy: jlust $
+ * @author $LastChangedBy$
  *
- * @version $LastChangedRevision: 258 $
+ * @version $LastChangedRevision$
  *
  * @param <T> the entity type
  */

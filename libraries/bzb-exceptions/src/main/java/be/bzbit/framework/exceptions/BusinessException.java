@@ -8,9 +8,9 @@ package be.bzbit.framework.exceptions;
  * <a href="http://www.inze.be/andries/?p=41">http://www.inze.be/andries/?p=41</a>
  * 
  * @author Jurgen Lust
- * @author $LastChangedBy: jlust $
+ * @author $LastChangedBy$
  *
- * @version $LastChangedRevision: 215 $
+ * @version $LastChangedRevision$
  *
  */
 public class BusinessException extends RuntimeException {

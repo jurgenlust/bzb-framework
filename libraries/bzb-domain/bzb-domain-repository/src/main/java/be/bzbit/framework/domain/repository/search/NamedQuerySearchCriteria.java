@@ -6,9 +6,9 @@ import java.io.Serializable;
  * Search Criteria with support for paging, using named queries
  * 
  * @author Jurgen Lust
- * @author $LastChangedBy: jlust $
+ * @author $LastChangedBy$
  * 
- * @version $LastChangedRevision: 228 $
+ * @version $LastChangedRevision$
  */
 public class NamedQuerySearchCriteria extends AbstractSearchCriteria implements
 		Serializable {

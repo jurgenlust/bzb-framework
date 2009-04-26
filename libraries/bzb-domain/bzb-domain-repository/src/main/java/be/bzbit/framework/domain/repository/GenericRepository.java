@@ -13,9 +13,9 @@ import be.bzbit.framework.domain.repository.search.SearchResult;
  * Generic Repository, providing basic CRUD operations
  *
  * @author Jurgen Lust
- * @author $LastChangedBy: Jurgen $
+ * @author $LastChangedBy$
  *
- * @version $LastChangedRevision: 355 $
+ * @version $LastChangedRevision$
  *
  * @param <T> the entity type
  * @param <ID> the primary key type

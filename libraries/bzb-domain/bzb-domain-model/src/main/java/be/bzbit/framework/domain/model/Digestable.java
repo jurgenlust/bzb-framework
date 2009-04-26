@@ -6,9 +6,9 @@ import java.util.SortedMap;
  * A Digestable entity contains a column with the message digest of the record
  *
  * @author jlust
- * @author $LastChangedBy: jlust $
+ * @author $LastChangedBy$
  *
- * @version $LastChangedRevision: 317 $
+ * @version $LastChangedRevision$
  */
 public interface Digestable {
     void setDigest(String digest);

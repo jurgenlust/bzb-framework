@@ -53,9 +53,9 @@ import be.bzbit.framework.domain.repository.search.SearchResult;
  * also expects Hibernate als JPA implementation.
  * 
  * @author Jurgen Lust
- * @author $LastChangedBy: Jurgen $
+ * @author $LastChangedBy$
  * 
- * @version $LastChangedRevision: 355 $
+ * @version $LastChangedRevision$
  * 
  * @param <T>
  *            The persistent type

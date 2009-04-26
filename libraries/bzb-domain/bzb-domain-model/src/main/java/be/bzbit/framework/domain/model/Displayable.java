@@ -8,9 +8,9 @@ import java.util.Locale;
  * interface, for example in a combobox.
  *
  * @author Jurgen Lust
- * @author $LastChangedBy: jlust $
+ * @author $LastChangedBy$
  *
- * @version $LastChangedRevision: 212 $
+ * @version $LastChangedRevision$
  */
 public interface Displayable {
 	String getLabel();

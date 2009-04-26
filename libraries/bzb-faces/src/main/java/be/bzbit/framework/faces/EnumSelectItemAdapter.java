@@ -16,9 +16,9 @@ import javax.faces.model.SelectItem;
  * Adapter for displaying comboboxes using enums
  *
  * @author Jurgen Lust
- * @author $LastChangedBy: jlust $
+ * @author $LastChangedBy$
  *
- * @version $LastChangedRevision: 173 $
+ * @version $LastChangedRevision$
  *
  * @param <T> The enum type
  */

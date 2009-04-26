@@ -7,9 +7,9 @@ import org.apache.commons.lang.StringUtils;
  * Some custom EL functions
  *
  * @author Jurgen Lust
- * @author $LastChangedBy: jlust $
+ * @author $LastChangedBy$
  *
- * @version $LastChangedRevision: 172 $
+ * @version $LastChangedRevision$
  */
 public class JsfFunctions {
     //~ Methods ----------------------------------------------------------------

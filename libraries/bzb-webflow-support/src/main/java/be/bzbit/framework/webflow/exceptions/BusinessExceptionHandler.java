@@ -14,9 +14,9 @@ import be.bzbit.framework.exceptions.BusinessException;
  * when a BusinessException is caught.
  * 
  * @author Jurgen Lust
- * @author $LastChangedBy: jlust $
+ * @author $LastChangedBy$
  *
- * @version $LastChangedRevision: 216 $
+ * @version $LastChangedRevision$
  *
  */
 public class BusinessExceptionHandler implements FlowExecutionExceptionHandler {

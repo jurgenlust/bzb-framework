@@ -6,9 +6,9 @@ import java.io.Serializable;
  * Search Criteria with support for paging, using EJBQL queries
  * 
  * @author Jurgen Lust
- * @author $LastChangedBy: jlust $
+ * @author $LastChangedBy$
  * 
- * @version $LastChangedRevision: 228 $
+ * @version $LastChangedRevision$
  */
 public class EjbQLSearchCriteria extends AbstractSearchCriteria implements
 		Serializable {
