@@ -4,7 +4,7 @@
     <parent>
         <groupId>be.bzb-it.framework.maven</groupId>
         <artifactId>plugins</artifactId>
-        <version>0.7.4</version>
+        <version>0.7.5-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
     <groupId>be.bzb-it.framework.maven.plugins</groupId>
