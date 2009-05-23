@@ -3,7 +3,7 @@
     <parent>
         <groupId>be.bzb-it.framework</groupId>
         <artifactId>bzb-dependencies</artifactId>
-        <version>0.7.5</version>
+        <version>0.7.6-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
     <groupId>be.bzb-it.framework.dependencies</groupId>
