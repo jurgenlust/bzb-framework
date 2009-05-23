@@ -1,0 +1,86 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+ xmlns:f="http://java.sun.com/jsf/core" xmlns:h="http://java.sun.com/jsf/html"
+ xmlns:ui="http://java.sun.com/jsf/facelets"
+ xmlns:c="http://java.sun.com/jstl/core" xmlns:rich="http://richfaces.org/rich"
+ xmlns:a4j="http://richfaces.org/a4j" xmlns:html="http://www.w3.org/1999/xhtml"
+ xmlns:bzbel="http://www.bzb-it.be/bzb-faces/el">
+
+<ui:composition>
+ <c:if test="${empty rows}">
+  <c:set var="rows" value="10" />
+ </c:if>
+
+ <c:if test="${empty width}">
+  <c:set var="width" value="100%" />
+ </c:if>
+
+ <c:if test="${empty reRender}">
+  <c:set var="reRender" value="${id}" />
+ </c:if>
+
+ <c:if test="${empty model}">
+  <c:set var="model" value="#{handler['tableModel']}" />
+ </c:if>
+ 
+ <c:if test="${empty searchPattern}">
+  <c:set var="searchPattern" value="searchPattern" />
+ </c:if>
+ 
+
+ <h:form id="${id}Form">
+  <rich:dataTable id="${id}" value="${model}" var="row" rows="${rows}"
+   width="${width}">
+   <c:if test="${!empty searchActionListener}">
+    <f:facet name="header">
+     <a4j:outputPanel layout="block">
+   	  <h:outputLabel for="${id}SearchPattern" value="#{messageSource.LabelSearch}:" />
+      <h:inputText id="${id}SearchPattern" value="#{handler[searchPattern]}" />
+      <a4j:commandButton reRender="${reRender}" actionListener="#{handler[searchActionListener]}" value="#{messageSource.ButtonSearch}" />
+     </a4j:outputPanel>
+    </f:facet>
+   </c:if>
+   <c:forEach var="fieldName" items="${bzbel:split(fieldNames)}">
+    <rich:column>
+     <f:facet name="header">
+      <h:outputText value="#{messageSource[fieldName]}" />
+     </f:facet>
+     <h:outputText value="#{row[fieldName]}" />
+    </rich:column>
+   </c:forEach>
+   <rich:column>
+    <f:facet name="header">
+     <h:outputText value="#{messageSource.ColumnHeaderActions}" />
+    </f:facet>
+    <c:if test="${!empty selectAction}">
+     <h:commandLink action="#{handler[selectAction]}"
+      value="#{messageSource.ButtonSelect}" title="#{messageSource.ButtonSelect}" />
+     <h:outputText value=" " />
+    </c:if>
+    <c:if test="${!empty selectActionListener}">
+     <a4j:commandLink actionListener="#{handler[selectActionListener]}"
+      reRender="${reRender}" value="#{messageSource.ButtonSelect}"
+      title="#{messageSource.ButtonSelect}" />
+     <h:outputText value=" " />
+    </c:if>
+    <c:if test="${!empty deleteAction}">
+     <h:commandLink action="#{handler[deleteAction]}"
+      value="#{messageSource.ButtonDelete}"
+      title="#{messageSource.ButtonDelete}" />
+     <h:outputText value=" " />
+    </c:if>
+    <c:if test="${!empty deleteActionListener}">
+     <a4j:commandLink actionListener="#{handler[deleteActionListener]}"
+      reRender="${reRender}" value="#{messageSource.ButtonDelete}"
+      title="#{messageSource.ButtonDelete}" />
+     <h:outputText value=" " />
+    </c:if>
+   </rich:column>
+   <f:facet name="footer">
+    <rich:datascroller />
+   </f:facet>
+  </rich:dataTable>
+ </h:form>
+</ui:composition>
+</html>

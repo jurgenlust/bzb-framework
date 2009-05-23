@@ -1,0 +1,46 @@
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <parent>
+        <groupId>be.bzb-it.framework.maven</groupId>
+        <artifactId>plugins</artifactId>
+        <version>0.7.5</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>be.bzb-it.framework.maven.plugins</groupId>
+    <artifactId>prettyprinter-plugin</artifactId>
+    <packaging>maven-plugin</packaging>
+    <name>BZB Framework - Maven plugins - Pretty Printer</name>
+  <dependencies>
+  <dependency>
+   <groupId>be.bzb-it.framework.dependencies</groupId>
+   <artifactId>dom4j</artifactId>
+   <type>pom</type>
+   <version>${version}</version>
+  </dependency>
+  <dependency>
+   <groupId>be.bzb-it.framework.dependencies</groupId>
+   <artifactId>maven</artifactId>
+   <type>pom</type>
+   <version>${version}</version>
+  </dependency>
+  <dependency>
+   <groupId>be.bzb-it.framework.dependencies</groupId>
+   <artifactId>jalopy</artifactId>
+   <type>pom</type>
+   <version>${version}</version>
+  </dependency>
+  <dependency>
+   <groupId>be.bzb-it.framework.dependencies</groupId>
+   <artifactId>log4j</artifactId>
+   <type>pom</type>
+   <version>${version}</version>
+  </dependency>
+  <dependency>
+   <groupId>be.bzb-it.framework.dependencies</groupId>
+   <artifactId>ant</artifactId>
+   <type>pom</type>
+   <version>${version}</version>
+  </dependency>
+ </dependencies>
+</project>

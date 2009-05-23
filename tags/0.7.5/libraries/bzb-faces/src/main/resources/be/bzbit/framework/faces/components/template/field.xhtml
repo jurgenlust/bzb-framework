@@ -1,0 +1,42 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html
+	xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+    xmlns:c="http://java.sun.com/jstl/core"
+    xmlns:rich="http://richfaces.org/rich"
+    xmlns:a4j="http://richfaces.org/a4j"
+	xmlns:html="http://www.w3.org/1999/xhtml">
+ <ui:composition>
+  <c:if test="${empty fieldId}">
+   <c:set var="fieldId" value="${fieldName}Field" />
+  </c:if>
+ 
+  <c:if test="${empty label}">
+   <c:set var="label" value="#{messageSource[fieldName]}" />
+  </c:if>
+  
+  <c:if test="${empty required}">
+   <c:set var="required" value="true" />
+  </c:if>
+
+  <c:if test="${empty rendered}">
+   <c:set var="rendered" value="true" />
+  </c:if>
+
+  <a4j:outputPanel layout="block" rendered="${rendered}">
+   <c:choose>
+    <c:when test="${empty fieldName or empty entity}">
+     <span class="error">
+      <h:outputText value="inputText error: attributes 'entity' and 'fieldName' are required" />
+     </span>
+    </c:when>
+    <c:otherwise>
+     <ui:insert name="fieldBody" />
+    </c:otherwise>
+   </c:choose>
+  </a4j:outputPanel>  
+ </ui:composition> 
+</html>

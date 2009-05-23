@@ -1,0 +1,61 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+ <parent>
+  <groupId>be.bzb-it.framework.dependencies</groupId>
+  <artifactId>spring</artifactId>
+  <version>0.7.5</version>
+ </parent>
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>be.bzb-it.framework.dependencies</groupId>
+  <artifactId>spring-minimal</artifactId>
+  <packaging>pom</packaging>
+  <name>BZB Framework - Dependencies - Spring Minimal</name>
+ <dependencies>
+  <dependency>
+   <groupId>org.springframework</groupId>
+   <artifactId>spring-aop</artifactId>
+   <version>${springVersion}</version>
+  </dependency>
+  <dependency>
+   <groupId>org.springframework</groupId>
+   <artifactId>spring-aspects</artifactId>
+   <version>${springVersion}</version>
+  </dependency>
+  <dependency>
+   <groupId>org.springframework</groupId>
+   <artifactId>spring-beans</artifactId>
+   <version>${springVersion}</version>
+  </dependency>
+  <dependency>
+   <groupId>org.springframework</groupId>
+   <artifactId>spring-context</artifactId>
+   <version>${springVersion}</version>
+  </dependency>
+  <dependency>
+   <groupId>org.springframework</groupId>
+   <artifactId>spring-core</artifactId>
+   <version>${springVersion}</version>
+<exclusions>
+        <exclusion>
+          <groupId>javax.servlet</groupId>
+          <artifactId>servlet-api</artifactId>
+        </exclusion>
+      </exclusions>
+      </dependency>
+  <dependency>
+   <groupId>org.springframework</groupId>
+   <artifactId>spring-context-support</artifactId>
+   <version>${springVersion}</version>
+  </dependency>
+  <dependency>
+   <groupId>aopalliance</groupId>
+   <artifactId>aopalliance</artifactId>
+   <version>1.0</version>
+  </dependency>
+  <dependency>
+   <groupId>aspectj</groupId>
+   <artifactId>aspectjrt</artifactId>
+   <version>1.5.2</version>
+  </dependency>
+ </dependencies>
+</project>
