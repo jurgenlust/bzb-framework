@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>be.bzb-it.framework.libraries.domain</groupId>
+  <artifactId>bzb-domain-webflow-support</artifactId>
+  <version>0.7.6-SNAPSHOT</version>
+  <versioning>
+    <versions>
+      <version>0.7.6-SNAPSHOT</version>
+    </versions>
+    <lastUpdated>20090808201048</lastUpdated>
+  </versioning>
+</metadata>
