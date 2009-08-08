@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>be.bzb-it.framework.dependencies</groupId>
+  <artifactId>dom4j</artifactId>
+  <version>0.7.6-SNAPSHOT</version>
+  <versioning>
+    <snapshot>
+      <buildNumber>1</buildNumber>
+    </snapshot>
+    <lastUpdated>20090808195054</lastUpdated>
+  </versioning>
+</metadata>
