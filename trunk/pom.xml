@@ -29,6 +29,13 @@
         </developer>
     </developers>
     <build>
+        <extensions>
+            <extension>
+                <groupId>org.apache.maven.wagon</groupId>
+                <artifactId>wagon-webdav</artifactId>
+                <version>1.0-beta-2</version>
+            </extension>
+        </extensions>
         <pluginManagement>
             <plugins>
                 <plugin>
@@ -128,17 +135,14 @@
         <url>http://code.google.com/p/bzb-framework/source/browse/</url>
     </scm>
     <distributionManagement>
-        <!-- use the following if you're not using a snapshot version. -->
-    	<repository>
-            <id>local-repo</id>
-       	    <name>local repository</name>
-            <url>file://${user.home}/.m2/repository</url>
+        <repository>
+            <id>googlecode.bzb.repo</id>
+            <url>dav:https://bzb-framework.googlecode.com/svn/maven-repo/</url>
         </repository>
-        <!-- use the following if you ARE using a snapshot version. -->
         <snapshotRepository>
-            <id>local-snapshot-repo</id>
-       	    <name>local snapshot repository</name>
-            <url>file://${user.home}/.m2/repository</url>
+            <id>googlecode.bzb.snapshotrepo</id>
+            <url>dav:https://bzb-framework.googlecode.com/svn/maven-snapshot-repo/</url>
+            <uniqueVersion>false</uniqueVersion>
         </snapshotRepository>
     </distributionManagement>
     <repositories>
@@ -158,6 +162,30 @@
             <id>javaNet</id>
             <name>java.net</name>
             <url>http://download.java.net/maven/2/</url>
+            <releases>
+                <enabled>true</enabled>
+                <updatePolicy>never</updatePolicy>
+            </releases>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </repository>
+        <repository>
+            <id>bzb</id>
+            <name>BZB Repository</name>
+            <url>http://bzb-framework.googlecode.com/svn/maven-repo/</url>
+            <releases>
+                <enabled>true</enabled>
+                <updatePolicy>never</updatePolicy>
+            </releases>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </repository>
+        <repository>
+            <id>missing-resources</id>
+            <name>BZB Missing Resources Repository</name>
+            <url>http://bzb-framework.googlecode.com/svn/maven-missing-resources/</url>
             <releases>
                 <enabled>true</enabled>
                 <updatePolicy>never</updatePolicy>
