@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>be.bzb-it.framework.libraries</groupId>
+  <artifactId>bzb-spring-support</artifactId>
+  <version>0.7.6-SNAPSHOT</version>
+  <versioning>
+    <snapshot>
+      <buildNumber>1</buildNumber>
+    </snapshot>
+    <lastUpdated>20090808200547</lastUpdated>
+  </versioning>
+</metadata>
