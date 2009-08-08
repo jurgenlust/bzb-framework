@@ -309,7 +309,7 @@
 <method>
 <bean>false</bean>
 </method>
-<order>static|field|initializer|constructor|method|interface|class|annotation|enum</order>
+<order>enum|static|field|initializer|constructor|method|interface|class|annotation</order>
 <variable>true</variable>
 </declaration>
 <modifier>
