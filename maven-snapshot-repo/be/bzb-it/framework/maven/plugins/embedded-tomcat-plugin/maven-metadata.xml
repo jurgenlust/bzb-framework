@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>be.bzb-it.framework.maven.plugins</groupId>
+  <artifactId>embedded-tomcat-plugin</artifactId>
+  <version>0.7.6-SNAPSHOT</version>
+  <versioning>
+    <latest>0.7.6-SNAPSHOT</latest>
+    <versions>
+      <version>0.7.6-SNAPSHOT</version>
+    </versions>
+    <lastUpdated>20090808211319</lastUpdated>
+  </versioning>
+</metadata>
