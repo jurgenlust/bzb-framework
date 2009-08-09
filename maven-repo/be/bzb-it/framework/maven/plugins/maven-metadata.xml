@@ -20,5 +20,10 @@
       <prefix>prettyprinter</prefix>
       <artifactId>prettyprinter-plugin</artifactId>
     </plugin>
+    <plugin>
+      <name>BZB Framework - Maven plugins - Embedded Tomcat</name>
+      <prefix>embedded-tomcat</prefix>
+      <artifactId>embedded-tomcat-plugin</artifactId>
+    </plugin>
   </plugins>
 </metadata>
