@@ -9,4 +9,11 @@
     </versions>
     <lastUpdated>20090809231811</lastUpdated>
   </versioning>
+  <plugins>
+    <plugin>
+      <name>BZB Framework - Maven plugins - Hibernate Tools</name>
+      <prefix>hibernate-tools</prefix>
+      <artifactId>hibernate-tools-plugin</artifactId>
+    </plugin>
+  </plugins>
 </metadata>
