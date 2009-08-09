@@ -1,0 +1,36 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html
+	xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+    xmlns:c="http://java.sun.com/jstl/core"
+    xmlns:rich="http://richfaces.org/rich"
+    xmlns:a4j="http://richfaces.org/a4j"
+	xmlns:html="http://www.w3.org/1999/xhtml">
+ <ui:composition template="/be/bzbit/framework/faces/components/template/field.xhtml">
+  <c:if test="${empty fieldId}">
+   <c:set var="fieldId" value="${fieldName}Input" />
+  </c:if>
+
+  <ui:define name="fieldBody">
+  
+     <!-- label -->
+     <h:outputLabel id="${fieldId}Label" for="${fieldId}">
+      <h:outputText value="${label}" />
+      <h:outputText value=":" />
+     </h:outputLabel>
+     
+     <!-- input field -->
+     <ui:insert name="component" />
+     
+     <!-- faces messages -->
+     <rich:message for="${fieldId}" passedLabel=""
+       errorLabelClass="error" fatalLabelClass="fatal"
+       infoLabelClass="message" warnLabelClass="warning" showSummary="true"
+       showDetail="false" rendered="${!readonly}">
+      </rich:message>
+  </ui:define>         
+ </ui:composition> 
+</html>

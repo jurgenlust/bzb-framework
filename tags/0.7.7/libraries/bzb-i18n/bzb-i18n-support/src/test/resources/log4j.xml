@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE log4j:configuration SYSTEM "http://logging.apache.org/log4j/docs/api/org/apache/log4j/xml/log4j.dtd">
+
+<log4j:configuration xmlns:log4j="http://jakarta.apache.org/log4j/">
+
+	<appender name="CONSOLE" class="org.apache.log4j.ConsoleAppender">
+		<param name="Target" value="System.out" />
+		<param name="Threshold" value="DEBUG" />
+
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%d %-5p [%c] %m%n" />
+		</layout>
+	</appender>
+
+	<category name="org">
+		<priority value="WARN" />
+	</category>
+
+    <category name="javax.faces">
+        <priority value="WARN" />
+    </category>
+
+	<category name="com.sun">
+		<priority value="WARN" />
+	</category>
+
+	<category name="httpclient.wire">
+		<priority value="WARN" />
+	</category>
+
+	<category name="org.hibernate.SQL">
+		<priority value="DEBUG" />
+	</category>
+
+	<category name="org.hibernate.type">
+		<priority value="DEBUG" />
+	</category>
+
+	<category name="org.hibernate.hql">
+		<priority value="DEBUG" />
+	</category>
+
+	<root>
+		<priority value="debug" />
+		<appender-ref ref="CONSOLE" />
+	</root>
+	
+</log4j:configuration>
