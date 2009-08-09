@@ -1,0 +1,38 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+ <parent>
+  <groupId>be.bzb-it.framework.libraries</groupId>
+  <artifactId>bzb-library-profiles</artifactId>
+  <version>0.7.7</version>
+ </parent>
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>be.bzb-it.framework.libraries.profiles</groupId>
+  <artifactId>webapp</artifactId>
+  <packaging>pom</packaging>
+  <name>BZB Framework - Library profiles - Web Application</name>
+ <dependencies>
+  <dependency>
+   <groupId>be.bzb-it.framework.libraries</groupId>
+   <artifactId>bzb-faces</artifactId>
+   <type>jar</type>
+   <version>${version}</version>
+  </dependency>
+  <dependency>
+   <groupId>be.bzb-it.framework.libraries</groupId>
+   <artifactId>bzb-webflow-support</artifactId>
+   <type>jar</type>
+   <version>${version}</version>
+  </dependency>
+  <dependency>
+   <groupId>be.bzb-it.framework.libraries.domain</groupId>
+   <artifactId>bzb-domain-faces</artifactId>
+   <type>jar</type>
+   <version>${version}</version>
+  </dependency>
+  <dependency>
+   <groupId>be.bzb-it.framework.libraries.domain</groupId>
+   <artifactId>bzb-domain-webflow-support</artifactId>
+   <type>jar</type>
+   <version>${version}</version>
+  </dependency>
+ </dependencies>
+</project>
