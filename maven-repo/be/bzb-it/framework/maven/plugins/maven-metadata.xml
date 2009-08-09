@@ -15,5 +15,10 @@
       <prefix>hibernate-tools</prefix>
       <artifactId>hibernate-tools-plugin</artifactId>
     </plugin>
+    <plugin>
+      <name>BZB Framework - Maven plugins - Pretty Printer</name>
+      <prefix>prettyprinter</prefix>
+      <artifactId>prettyprinter-plugin</artifactId>
+    </plugin>
   </plugins>
 </metadata>
