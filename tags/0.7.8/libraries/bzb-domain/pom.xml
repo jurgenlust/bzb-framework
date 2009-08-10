@@ -1,0 +1,37 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+ <parent>
+  <groupId>be.bzb-it.framework</groupId>
+  <artifactId>bzb-libraries</artifactId>
+  <version>0.7.8</version>
+ </parent>
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>be.bzb-it.framework.libraries</groupId>
+  <artifactId>bzb-domain</artifactId>
+  <packaging>pom</packaging>
+  <name>BZB Framework - Libraries - Domain</name>
+  <modules>
+    <module>bzb-domain-model</module>
+    <module>bzb-domain-repository</module>
+    <module>bzb-domain-transfer</module>
+<!--
+    <module>bzb-domain-search</module>
+    <module>bzb-domain-persistence</module>
+-->
+    <module>bzb-domain-faces</module>
+    <module>bzb-domain-webflow-support</module>
+  </modules>
+  <dependencies>
+  <dependency>
+   <groupId>be.bzb-it.framework.dependencies</groupId>
+   <artifactId>hibernate</artifactId>
+   <version>${version}</version>
+   <type>pom</type>
+  </dependency>
+  <dependency>
+   <groupId>be.bzb-it.framework.dependencies</groupId>
+   <artifactId>joda-time-hibernate</artifactId>
+   <version>${version}</version>
+   <type>pom</type>
+  </dependency>
+  </dependencies>
+</project>

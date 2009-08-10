@@ -1,0 +1,1 @@
+insert into I18N_MESSAGE (id, version, MESSAGE_CODE, COUNTRY_CODE, LANGUAGE_CODE, MESSAGE) values (1, 0, 'testCode1', 'BE', 'nl', 'Dit is testboodschap 1');

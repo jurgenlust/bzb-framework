@@ -1,0 +1,57 @@
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <parent>
+        <groupId>be.bzb-it.framework</groupId>
+        <artifactId>bzb-framework</artifactId>
+        <version>0.7.8</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>be.bzb-it.framework</groupId>
+    <artifactId>bzb-libraries</artifactId>
+    <packaging>pom</packaging>
+    <name>BZB Framework - Libraries</name>
+    <modules>
+        <module>bzb-exceptions</module>
+        <module>bzb-spring-support</module>
+	<module>bzb-faces</module> 
+	<module>bzb-webflow-support</module>
+        <module>bzb-domain</module>
+        <module>bzb-i18n</module>
+        <module>bzb-pdf-support</module>
+        <!-- profiles should come last -->
+        <module>profiles</module>
+    </modules>
+    <dependencies>
+        <dependency>
+            <groupId>be.bzb-it.framework.dependencies</groupId>
+            <artifactId>junit</artifactId>
+            <version>${version}</version>
+            <type>pom</type>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>be.bzb-it.framework.dependencies</groupId>
+            <artifactId>commons-lang</artifactId>
+            <version>${version}</version>
+            <type>pom</type>
+        </dependency>
+        <dependency>
+            <groupId>be.bzb-it.framework.dependencies</groupId>
+            <artifactId>commons-collections</artifactId>
+            <version>${version}</version>
+            <type>pom</type>
+        </dependency>
+        <dependency>
+            <groupId>be.bzb-it.framework.dependencies</groupId>
+            <artifactId>log4j</artifactId>
+            <version>${version}</version>
+            <type>pom</type>
+        </dependency>
+        <dependency>
+            <groupId>be.bzb-it.framework.dependencies</groupId>
+            <artifactId>commons-logging</artifactId>
+            <version>${version}</version>
+            <type>pom</type>
+        </dependency>
+    </dependencies>
+</project>

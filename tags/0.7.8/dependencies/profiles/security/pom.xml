@@ -1,0 +1,26 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+ <parent>
+  <groupId>be.bzb-it.framework.dependencies</groupId>
+  <artifactId>bzb-dependency-profiles</artifactId>
+  <version>0.7.8</version>
+ </parent>
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>be.bzb-it.framework.dependencies.profiles</groupId>
+  <artifactId>security</artifactId>
+  <packaging>pom</packaging>
+  <name>BZB Framework - Dependency profiles - Security</name>
+ <dependencies>
+  <dependency>
+   <groupId>be.bzb-it.framework.dependencies</groupId>
+   <artifactId>spring-security</artifactId>
+   <version>${version}</version>
+   <type>pom</type>
+  </dependency>
+  <dependency>
+   <groupId>be.bzb-it.framework.dependencies</groupId>
+   <artifactId>commons-codec</artifactId>
+   <version>${version}</version>
+   <type>pom</type>
+  </dependency>
+ </dependencies>
+</project>
