@@ -2,7 +2,7 @@
     <parent>
         <groupId>be.bzb-it.framework.libraries</groupId>
         <artifactId>bzb-i18n</artifactId>
-        <version>0.7.8</version>
+        <version>0.7.9-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
     <groupId>be.bzb-it.framework.libraries.i18n</groupId>
