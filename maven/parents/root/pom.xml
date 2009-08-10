@@ -15,7 +15,7 @@
         <url>http://www.bzb-it.be/</url>
     </organization>
     <properties>
-        <bzb.framework.version>${version}</bzb.framework.version>
+        <bzb.framework.version>${project.version}</bzb.framework.version>
     </properties>
     <build>
         <resources>
