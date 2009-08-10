@@ -3,7 +3,7 @@
     <parent>
 		<groupId>be.bzb-it.framework.maven</groupId>
 		<artifactId>parents</artifactId>
-		<version>0.7.8-SNAPSHOT</version>
+		<version>0.7.8</version>
 	</parent>
     <modelVersion>4.0.0</modelVersion>
     <groupId>be.bzb-it.framework.maven.parents</groupId>
