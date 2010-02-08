@@ -32,6 +32,7 @@ public class DigestGeneratingInterceptor<T> extends AbstractInterceptor<T> {
 	private String keyAlias;
 	private boolean debug = false;
 	private boolean checkOnLoad = true;
+	private boolean exceptionOnLoad = false;
 
 	public DigestGeneratingInterceptor(Class<T> persistentClass) {
 		super(persistentClass);
@@ -45,11 +46,22 @@ public class DigestGeneratingInterceptor<T> extends AbstractInterceptor<T> {
 	 */
 	@Override
 	public void postLoad(Collection<T> entities) {
+		if (!checkOnLoad) {
+			return;
+		}
 		debug("Checking digest for collection of entities of type %s",
 				getPersistentClass().getName());
 		for (T entity : entities) {
 			checkDigest(entity);
 		}
+	}
+
+	public boolean isExceptionOnLoad() {
+		return exceptionOnLoad;
+	}
+
+	public void setExceptionOnLoad(boolean exceptionOnLoad) {
+		this.exceptionOnLoad = exceptionOnLoad;
 	}
 
 	private void checkDigest(T entity) {
@@ -61,9 +73,15 @@ public class DigestGeneratingInterceptor<T> extends AbstractInterceptor<T> {
 			String digest = generateDigest(entity);
 			debug("Generated digest %s", digest);
 			debug("Entity has digest %s", ((Digestable) entity).getDigest());
-			if (!digest.equals(digestable.getDigest())) {
+			if (digest.equals(digestable.getDigest())) {
+				digestable.setDigestValid(true);
+			} else {
 				debug("Generated digest does not match digest in entity!");
-				throw new InvalidDigestException();
+				if (exceptionOnLoad) {
+					throw new InvalidDigestException();
+				} else {
+					digestable.setDigestValid(false);
+				}
 			}
 		} else {
 			debug("Entity is not Digestable. Ignoring...");
@@ -79,6 +97,9 @@ public class DigestGeneratingInterceptor<T> extends AbstractInterceptor<T> {
 	 */
 	@Override
 	public void postLoad(T entity) {
+		if (!checkOnLoad) {
+			return;
+		}
 		debug("Checking digest for entity of type %s", getPersistentClass()
 				.getName());
 		checkDigest(entity);

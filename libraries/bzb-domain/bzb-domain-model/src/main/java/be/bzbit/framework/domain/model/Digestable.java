@@ -16,4 +16,8 @@ public interface Digestable {
     String getDigest();
 
     SortedMap<String,String> getDigestInput();
+    
+    void setDigestValid(boolean valid);
+    
+    boolean isDigestValid();
 }

@@ -4,12 +4,12 @@
     <parent>
         <groupId>be.bzb-it.framework.maven.parents</groupId>
         <artifactId>root</artifactId>
-        <version>0.7.9-SNAPSHOT</version>
+        <version>0.8.0</version>
     </parent>
     <groupId>be.bzb-it.framework.maven.parents</groupId>
     <artifactId>webapp</artifactId>
     <packaging>pom</packaging>
-    <version>0.7.9-SNAPSHOT</version>
+    <version>0.8.0</version>
     <name>BZB Framework - Parent pom for web applications</name>
     <properties>
         <bzb.framework.version>${version}</bzb.framework.version>
