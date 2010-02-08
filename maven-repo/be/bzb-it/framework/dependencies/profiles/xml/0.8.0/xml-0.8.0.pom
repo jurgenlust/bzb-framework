@@ -1,0 +1,26 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+ <parent>
+  <groupId>be.bzb-it.framework.dependencies</groupId>
+  <artifactId>bzb-dependency-profiles</artifactId>
+  <version>0.8.0</version>
+ </parent>
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>be.bzb-it.framework.dependencies.profiles</groupId>
+  <artifactId>xml</artifactId>
+  <packaging>pom</packaging>
+  <name>BZB Framework - Dependency profiles - XML</name>
+ <dependencies>
+  <dependency>
+   <groupId>be.bzb-it.framework.dependencies</groupId>
+   <artifactId>castor</artifactId>
+   <type>pom</type>
+   <version>${version}</version>
+  </dependency>
+  <dependency>
+   <groupId>be.bzb-it.framework.dependencies</groupId>
+   <artifactId>spring-oxm</artifactId>
+   <type>pom</type>
+   <version>${version}</version>
+  </dependency>
+ </dependencies>
+</project>
