@@ -1,0 +1,55 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+ <parent>
+  <groupId>be.bzb-it.framework</groupId>
+  <artifactId>bzb-framework</artifactId>
+  <version>0.8.0</version>
+ </parent>
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>be.bzb-it.framework</groupId>
+  <artifactId>bzb-dependencies</artifactId>
+  <packaging>pom</packaging>
+  <name>BZB Framework - Dependencies</name>
+  <modules>
+    <module>castor</module>
+    <module>commons-beanutils</module>
+    <module>commons-codec</module>
+    <module>commons-collections</module>
+    <module>commons-dbcp</module>
+    <module>commons-digester</module>
+    <module>commons-discovery</module>
+    <module>commons-lang</module>
+    <module>commons-logging</module>
+    <module>log4j</module>
+    <module>joda-time</module>
+    <module>hibernate</module>
+    <module>hibernate-tools</module>
+    <module>joda-time-hibernate</module>
+    <module>junit</module>
+    <module>jaxen</module>
+    <module>servlet</module>
+    <module>jstl</module>
+    <module>jsf</module>
+    <module>el</module>
+    <module>weblets</module>
+    <module>spring</module>
+    <module>dom4j</module>
+    <module>itext</module>
+    <module>ehcache</module>
+    <module>quartz</module>
+    <module>javamail</module>
+    <module>jdbc-postgresql</module>
+    <module>jdbc-mysql</module>
+    <module>jdbc-hsqldb</module>
+    <module>asm</module>
+    <module>pdfrenderer</module>
+    <module>ant</module>
+    <module>maven</module>
+    <module>jalopy</module>
+    <module>oscache</module>
+    <module>orchestra</module>
+    <module>poi</module>
+    <module>tomcat</module>
+    <!-- profiles should be the last module here -->
+    <module>profiles</module>
+  </modules>
+</project>
