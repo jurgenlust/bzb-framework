@@ -1,0 +1,62 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <parent>
+        <groupId>be.bzb-it.framework.libraries</groupId>
+        <artifactId>bzb-i18n</artifactId>
+        <version>0.8.0</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>be.bzb-it.framework.libraries.i18n</groupId>
+    <artifactId>bzb-i18n-conversion</artifactId>
+    <packaging>jar</packaging>
+    <name>BZB Framework - Libraries - i18n conversions</name>
+    <dependencies>
+        <dependency>
+            <groupId>be.bzb-it.framework.libraries.i18n</groupId>
+            <artifactId>bzb-i18n-support</artifactId>
+            <version>${version}</version>
+        </dependency>
+        <dependency>
+            <groupId>be.bzb-it.framework.dependencies</groupId>
+            <artifactId>poi</artifactId>
+            <version>${version}</version>
+            <type>pom</type>
+        </dependency>
+        <!-- Dependencies for unit tests -->
+        <dependency>
+            <groupId>be.bzb-it.framework.dependencies.profiles</groupId>
+            <artifactId>backbone</artifactId>
+            <version>${version}</version>
+            <type>pom</type>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>be.bzb-it.framework.dependencies.profiles</groupId>
+            <artifactId>persistence</artifactId>
+            <version>${version}</version>
+            <type>pom</type>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>be.bzb-it.framework.dependencies.profiles</groupId>
+            <artifactId>core</artifactId>
+            <version>${version}</version>
+            <type>pom</type>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>be.bzb-it.framework.dependencies.profiles</groupId>
+            <artifactId>model</artifactId>
+            <version>${version}</version>
+            <type>pom</type>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>be.bzb-it.framework.dependencies.profiles</groupId>
+            <artifactId>test</artifactId>
+            <version>${version}</version>
+            <type>pom</type>
+            <scope>test</scope>
+        </dependency>
+        
+    </dependencies>
+</project>

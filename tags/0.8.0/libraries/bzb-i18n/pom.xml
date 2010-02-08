@@ -1,0 +1,16 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+ <parent>
+  <groupId>be.bzb-it.framework</groupId>
+  <artifactId>bzb-libraries</artifactId>
+  <version>0.8.0</version>
+ </parent>
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>be.bzb-it.framework.libraries</groupId>
+  <artifactId>bzb-i18n</artifactId>
+  <packaging>pom</packaging>
+  <name>BZB Framework - Libraries - I18N</name>
+  <modules>
+    <module>bzb-i18n-support</module>
+    <module>bzb-i18n-conversion</module>
+  </modules>
+</project>
