@@ -1,0 +1,3 @@
+The BZB Framework (pronounced 'busy bee') is both a collection of open source tools and libraries, and a set of guidelines for creating enterprise Java software, usually targeted for the web.
+
+In its current state, it's not yet usable as a foundation for your web applications, due to a lack of documentation. You can however use the source code as inspiration for addressing common Spring, JSF, Hibernate and Maven issues.
